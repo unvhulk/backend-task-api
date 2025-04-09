@@ -1,7 +1,3 @@
-# Save the README content to a Markdown file
-
-readme_markdown = """\
-
 # 📝 Task Management API
 
 A backend-only RESTful API built with **Node.js**, **Express**, **MySQL (via Sequelize)**, and **JWT** for secure authentication.
