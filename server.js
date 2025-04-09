@@ -10,7 +10,7 @@ app.use(express.json());
 app.use("/api/auth", authRoutes);
 app.use("/api/tasks", authMiddleware, taskRoutes);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.DB_PORT || 5000;
 
 sequelize.sync({ force: true }).then(() => {
   app.listen(PORT, () => {
